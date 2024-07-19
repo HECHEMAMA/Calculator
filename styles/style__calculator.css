@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(120deg, rgb(168, 10, 160) 0%, rgb(30, 30, 233) 35%, rgba(0, 212, 255, 1) 100%)
+}
+
+table {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.116);
+    backdrop-filter: blur(40px);
+    display: grid;
+    gap: .5rem;
+    align-content: center;
+    justify-content: center;
+    height: 80%;
+    min-height: 500px;
+    min-width: 300px;
+    width: 300px;
+    border-radius: .5rem;
+}
+
+thead {
+    padding: 0 1rem;
+    position: relative;
+}
+
+table thead tr {
+    min-width: 230px;
+    height: 100px;
+}
+
+table thead tr .display {
+    background-color: rgba(255, 255, 255, .4);
+    backdrop-filter: blur(4);
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 100%;
+}
+
+table thead tr td {
+    padding: 0 .7rem;
+}
+
+
+table thead,
+table tbody {
+    padding: 1rem;
+    display: grid;
+    gap: .5rem;
+    align-content: center;
+    justify-content: center;
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 300px;
+}
+
+table tbody tr {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: .5rem;
+}
+
+.btn {
+    border-radius: 100%;
+    cursor: pointer;
+    padding: 1rem;
+    width: 50px;
+    height: 100%;
+    border: 0px transparent;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+
+.btn__mode {
+    width: 15px;
+    height: 15px;
+    background-color: #000000d5;
+    border-radius: 50%;
+    border: 0 solid transparent;
+    position: absolute;
+    top: -5px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.btn__dark{
+    background-color: lightslategrey;
+}
+
+.btn__light{
+    background-color: lightblue;
+}
+
+.btn__function__light {
+    background-color: lightsalmon;
+}
+
