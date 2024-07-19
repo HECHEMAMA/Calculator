@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style__calculator.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <!-- <td><button class="btn__mode"></button></td> -->
+                    <td class="display">
+                        <pre id="display"><!-- Resultado --></pre>
+                    </td>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <tr>
+                    <td><button type="button" class="btn btn__function__light" id="clear">C</button></td>
+                    <td><button type="button" class="btn btn__function__light" value="/">/</button></td>
+                    <td><button type="button" class="btn btn__function__light" value="*">*</button></td>
+                    <td><button type="button" class="btn btn__function__light" value="<"><></button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="btn btn__light" value=7>7</button></td>
+                    <td><button type="button" class="btn btn__light" value=8>8</button></td>
+                    <td><button type="button" class="btn btn__light" value=9>9</button></td>
+                    <td><button type="button" class="btn btn__function__light" value="-">-</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="btn btn__light" value=4>4</button></td>
+                    <td><button type="button" class="btn btn__light" value=5>5</button></td>
+                    <td><button type="button" class="btn btn__light" value=6>6</button></td>
+                    <td><button type="button" class="btn btn__function__light" value="+">+</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="btn btn__light" value=1>1</button></td>
+                    <td><button type="button" class="btn btn__light" value=2>2</button></td>
+                    <td><button type="button" class="btn btn__light" value=3>3</button></td>
+                    <td rowspan="2"><button type="button" class="btn btn__function__light" value="=">=</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="btn btn__function__light" value=".">.</button></td>
+                    <td><button type="button" class="btn btn__light" value=0>0</button></td>
+                    <td><button type="button" class="btn btn__function__light" value=.00>.00</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <script src="JavaScript/main.js"></script>
+</body>
+
+</html>
